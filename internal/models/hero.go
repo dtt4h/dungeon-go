@@ -17,3 +17,20 @@ func NewHero(name string) Hero {
 		Experience: 0,
 	}
 }
+
+// Attack method
+func (h *Hero) Attack() int {
+	damage := h.Level * 10
+	h.Experience += 5
+	return damage
+}
+
+// Display method
+func (h *Hero) DisplayInfo() {
+
+}
+
+// Heal method
+func (h *Hero) Heal() {
+
+}
